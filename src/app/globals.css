@@ -8,6 +8,10 @@
     @apply bg-[#1DB954];
   }
 
+  .bg-spotify-dark-green {
+    @apply bg-[#189a45];
+  }
+
   .bg-spotify-black {
     @apply bg-[#121212];
   }
