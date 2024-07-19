@@ -3,21 +3,58 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Define background colors */
+  .bg-spotify-green {
+    @apply bg-[#1DB954];
+  }
+
   .bg-spotify-black {
-    @apply bg-black;
+    @apply bg-[#121212];
+  }
+
+  .bg-spotify-light-dark {
+    @apply bg-[#212121];
+  }
+
+  .bg-spotify-gray {
+    @apply bg-[#535353];
+  }
+
+  .bg-spotify-light-gray {
+    @apply bg-[#B3B3B3];
+  }
+
+  .bg-spotify-white {
+    @apply bg-[#FFFFFF];
+  }
+
+  /* Define text colors */
+  .text-spotify-green {
+    @apply text-[#1DB954];
+  }
+
+  .text-spotify-black {
+    @apply text-[#121212];
+  }
+
+  .text-spotify-light-dark {
+    @apply text-[#212121];
+  }
+
+  .text-spotify-gray {
+    @apply text-[#535353];
+  }
+
+  .text-spotify-light-gray {
+    @apply text-[#B3B3B3];
   }
 
   .text-spotify-white {
-    @apply text-white;
-  }
-
-  .text-spotify-green {
-    @apply text-green-500; /* Or any specific green color you want to reference */
+    @apply text-[#FFFFFF];
   }
 }
 
+/* Apply the background color to the entire website */
 body {
   @apply bg-spotify-black text-spotify-white;
 }
-
-/* Any other global styles using the Spotify theme */
