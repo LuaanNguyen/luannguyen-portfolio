@@ -16,7 +16,7 @@ export default function ProfileCard() {
           width={300}
           height={300}
           objectFit="none" // change to suit your needs
-          className="p-6 w-full h-full rounded-[40px] "
+          className="p-6 w-[90%] h-[90%] rounded-[40px] place-self-center"
         ></Image>
         <PersonalStatement />
         <Booking />
