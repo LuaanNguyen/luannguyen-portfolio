@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect, useRef } from "react";
 
 // Extend the Window interface to include `onSpotifyIframeApiReady`
@@ -10,15 +11,8 @@ declare global {
 
 export default function EmbedediFrame() {
   const playerRef = useRef<HTMLDivElement>(null);
-  const [playerWidth, setPlayerWidth] = useState(window.innerWidth * 0.9);
 
   useEffect(() => {
-    const handleResize = () => {
-      setPlayerWidth(window.innerWidth * 0.9);
-    };
-
-    window.addEventListener("resize", handleResize);
-
     const script = document.createElement("script");
     script.src = "https://open.spotify.com/embed-podcast/iframe-api/v1";
     script.async = true;
@@ -30,7 +24,7 @@ export default function EmbedediFrame() {
           const element = playerRef.current;
           const options = {
             uri: "spotify:track:2p8IUWQDrpjuFltbdgLOag",
-            width: playerWidth,
+            width: "90%",
             height: "90",
             theme: "black",
           };
@@ -48,7 +42,7 @@ export default function EmbedediFrame() {
     return () => {
       document.body.removeChild(script);
     };
-  }, [playerWidth, setPlayerWidth]);
+  }, []);
 
   return (
     <footer className="bg-spotify-black text-spotify-white flex items-center justify-between p-4 fixed bottom-0 w-full">

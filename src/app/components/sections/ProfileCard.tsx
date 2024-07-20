@@ -40,13 +40,13 @@ function Booking() {
     <div className="flex px-6 mt-4 gap-4">
       <button
         type="button"
-        className="flex items-center text-xl gap-1 px-4 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
+        className="flex min-w-[160px] items-center text-xl gap-1 px-4 py-2 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
       >
         Book a Call
       </button>
       <button
         type="button"
-        className="flex items-center text-xl gap-1 px-4 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark  "
+        className="flex min-w-[170px] items-center text-xl gap-1 px-4 py-2 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark  "
       >
         <FaRegCopy />
         Copy Email
