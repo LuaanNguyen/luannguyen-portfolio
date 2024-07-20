@@ -39,18 +39,7 @@ export default function Navigation(): ReactNode {
           )}
 
           <Link href="/" className="flex gap-2 text-3xl font-bold items-center">
-            {mobile ? (
-              <Image
-                src="/Luan.jpg"
-                alt="Luan Nguyen"
-                width={40}
-                height={40}
-                className="rounded-full aspect-square object-cover"
-              />
-            ) : (
-              <FaCode className="text-spotify-green w-[70px]" />
-            )}
-
+            <FaCode className="text-spotify-green w-[70px]" />
             <h1 className="max-lg:hidden">Luan Nguyen</h1>
           </Link>
 
