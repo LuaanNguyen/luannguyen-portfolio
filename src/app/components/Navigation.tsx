@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { FaCode } from "react-icons/fa6";
 import { ReactNode } from "react";
 import { FaInstagram } from "react-icons/fa6";
@@ -6,18 +8,39 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { TiArrowForwardOutline } from "react-icons/ti";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa";
+
 import Link from "next/link";
 
-export default function Navigation() {
+export default function Navigation(): ReactNode {
+  const [mobileNav, setMobileNav] = useState<boolean>(false);
+
+  function handleMobileNav() {
+    setMobileNav((prev) => !prev);
+  }
+
   return (
     <nav className="w-screen">
-      <div className="flex bg-spotify-light-dark justify-between mx-32 mt-10 p-3 rounded-full items-center">
+      <div className="flex bg-spotify-light-dark justify-between max-md:mx-2 max-md:mt-4  max-md:px-5 max-md:py-3 mx-32 mt-10 p-2 rounded-full items-center">
+        {/*Mobile Mode*/}
+
+        {mobileNav ? (
+          <FaTimes className="text-4xl sm:hidden" onClick={handleMobileNav} />
+        ) : (
+          <GiHamburgerMenu
+            className="text-4xl sm:hidden"
+            onClick={handleMobileNav}
+          />
+        )}
+
         <Link href="/" className="flex gap-2 text-3xl font-bold items-center">
           <FaCode className="text-spotify-green w-[70px]" />
-          <h1 className="">Luan Nguyen</h1>
+          <h1 className="max-lg:hidden">Luan Nguyen</h1>
         </Link>
 
-        <div className="flex flex-row gap-4 items-center">
+        {/*Hidden on Mobile*/}
+        <div className="flex flex-row gap-5 items-center max-md:hidden">
           <SocialLinks />
           <PiLineVerticalThin className="text-spotify-gray text-4xl" />
           <Button name="Let's Talk" />
