@@ -5,19 +5,23 @@ import Image from "next/image";
 import { FaRegCopy } from "react-icons/fa6";
 import SocialLinks from "../SocialLinks";
 import { IoLocationOutline } from "react-icons/io5";
+import { BackgroundGradient } from "../ui/background-gradient";
 
 export default function ProfileCard() {
   return (
-    <div className="relative col-span-2 row-span-6 bg-spotify-black rounded-xl pb-6">
-      <div className="flex flex-col">
-        <Image
-          src="/Luan.jpg"
-          alt="Picture of the author"
-          width={300}
-          height={300}
-          objectFit="none" // change to suit your needs
-          className="p-6 w-[90%] h-[90%] rounded-[40px] place-self-center"
-        ></Image>
+    <div className="relative col-span-2 row-span-6 bg-spotify-black rounded-xl py-10">
+      <div className="flex flex-col gap-5">
+        <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
+          <Image
+            src="/Luan.jpg"
+            alt="Picture of the author"
+            width={300}
+            height={300}
+            objectFit="none" // change to suit your needs
+            className=" rounded-[25px] "
+          ></Image>
+        </BackgroundGradient>
+
         <PersonalStatement />
         <Booking />
         {/* <Location /> */}
