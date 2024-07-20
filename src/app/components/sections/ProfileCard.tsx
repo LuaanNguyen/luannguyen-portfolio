@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 export default function ProfileCard() {
   return (
-    <div className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl pb-6">
+    <div className="relative col-span-2 row-span-6 bg-spotify-black rounded-xl pb-6">
       <div className="flex flex-col">
         <Image
           src="/Luan.jpg"
@@ -54,13 +54,13 @@ function Booking() {
     <div className="flex px-6 mt-4 gap-4">
       <button
         type="button"
-        className="flex min-w-12 items-center text-lg gap-1 px-4 py-2 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
+        className="flex min-w-12 items-center text-md gap-1 px-5 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
       >
         Book a Call
       </button>
       <button
         type="button"
-        className="flex min-w-12 items-center text-lg gap-1 px-4 py-2 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark"
+        className="flex min-w-12 items-center text-md gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-gray-700 text-spotify-light-gray font-bold hover:bg-spotify-gray text-spotify-light-dark"
         onClick={handleCopyEmail}
       >
         <FaRegCopy />

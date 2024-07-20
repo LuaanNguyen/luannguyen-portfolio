@@ -21,7 +21,7 @@ export default function Navigation(): ReactNode {
   return (
     <nav className="w-screen">
       <div
-        className={`flex flex-col bg-spotify-light-dark max-md:mx-2 max-md:mt-4 mx-32 mt-4 p-2 rounded-full
+        className={`flex flex-col bg-spotify-light-dark max-md:mx-4 max-md:mt-4 mx-32 mt-4 p-2 rounded-full
          items-center`}
       >
         <section className="flex flex-row w-full justify-between items-center max-md:px-4 max-md:py-1">

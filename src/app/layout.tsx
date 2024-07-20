@@ -38,7 +38,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
-        <EmbedediFrame />
+        {/* <EmbedediFrame /> */}
       </body>
     </html>
   );

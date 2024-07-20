@@ -1,7 +1,6 @@
-import Hero from "./components/Hero";
-import { Spotlight } from "./components/ui/Spotlight";
 import ProfileCard from "./components/sections/ProfileCard";
 import Footer from "./components/Footer";
+import Skills from "./components/Skills";
 // import "./main.css";
 
 export default function Home() {
@@ -15,9 +14,7 @@ export default function Home() {
         <div className="col-span-2 row-span-6 col-start-5 bg-spotify-light-dark rounded-xl ">
           4
         </div>
-        <div className="col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl ">
-          5
-        </div>
+        <Skills />
         <div className="col-span-2 row-span-2 col-start-3 row-start-5 bg-spotify-light-dark rounded-xl ">
           3
         </div>
