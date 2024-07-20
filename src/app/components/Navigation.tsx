@@ -10,6 +10,7 @@ import { FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
+import { TypewriterEffect } from "./ui/type-writer-effect";
 
 export default function Navigation(): ReactNode {
   const [mobile, setMobile] = useState<boolean>(false);
@@ -37,7 +38,14 @@ export default function Navigation(): ReactNode {
 
           <Link href="/" className="flex gap-2 text-3xl font-bold items-center">
             <FaCode className="text-spotify-green w-[70px]" />
-            <h1 className="max-lg:hidden">Luan Nguyen</h1>
+            {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
+            <TypewriterEffect
+              words={[
+                { text: "Luan", className: "text-4xl" },
+                { text: "Nguyen", className: "text-4xl" },
+              ]}
+              className="place-self-center max-lg:hidden"
+            />
           </Link>
 
           {/*Hidden on Mobile*/}
