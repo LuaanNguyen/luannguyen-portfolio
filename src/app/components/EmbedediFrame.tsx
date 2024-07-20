@@ -45,10 +45,10 @@ export default function EmbedediFrame() {
   }, []);
 
   return (
-    <footer className="bg-spotify-black text-spotify-white flex items-center justify-between p-4 fixed bottom-0 w-full">
+    <section className="bg-spotify-black text-spotify-white flex items-center justify-between p-4 fixed bottom-0 w-full">
       <div className="flex-grow flex items-center justify-center w-[80%] max-md:w-[96%]">
         <div ref={playerRef} className="" style={{ background: "black" }}></div>
       </div>
-    </footer>
+    </section>
   );
 }
