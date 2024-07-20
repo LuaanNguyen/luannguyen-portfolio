@@ -24,7 +24,7 @@ export default function EmbedediFrame() {
           const element = playerRef.current;
           const options = {
             uri: "spotify:track:2p8IUWQDrpjuFltbdgLOag",
-            width: "98%",
+            width: "90%",
             height: "90",
             theme: "black",
           };
@@ -45,10 +45,8 @@ export default function EmbedediFrame() {
   }, []);
 
   return (
-    <section className="bg-spotify-black rounded-2xl text-spotify-white flex items-center justify-between p-4 fixed bottom-0 w-full">
-      <div className="flex-grow flex items-center justify-center w-[80%] max-md:w-[96%]">
-        <div ref={playerRef} className="" style={{ background: "black" }}></div>
-      </div>
+    <section className="bg-spotify-black rounded-2xl flex items-center justify-center p-4 fixed bottom-0 w-full">
+      <div ref={playerRef} className="" style={{ background: "black" }}></div>
     </section>
   );
 }

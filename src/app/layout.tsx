@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         {children}
-        <EmbedediFrame />
+        {/* <EmbedediFrame /> */}
       </body>
     </html>
   );
