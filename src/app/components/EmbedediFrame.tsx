@@ -1,7 +1,14 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 
-export default function Footer() {
+// Extend the Window interface to include `onSpotifyIframeApiReady`
+declare global {
+  interface Window {
+    onSpotifyIframeApiReady?: (api: any) => void;
+  }
+}
+
+export default function EmbedediFrame() {
   const playerRef = useRef<HTMLDivElement>(null);
   const [playerWidth, setPlayerWidth] = useState(window.innerWidth * 0.9);
 
