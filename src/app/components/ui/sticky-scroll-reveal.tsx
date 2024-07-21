@@ -40,10 +40,7 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "#212121", // Dark gray
-    // Medium gray
-  ];
+  const backgroundColors = ["#6DC5D1", "#FDAF7B", "#90D26D"];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
@@ -62,6 +59,7 @@ export const StickyScroll = ({
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        opacity: "95%",
       }}
       className="h-[36rem] overflow-y-auto flex justify-center relative space-x-4 rounded-md py-6 px-4"
       ref={ref}
@@ -88,7 +86,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-sm text-slate-300 max-w-sm mt-4"
+                className="text-sm text-spotify-white max-w-sm mt-4"
               >
                 {item.description}
               </motion.p>

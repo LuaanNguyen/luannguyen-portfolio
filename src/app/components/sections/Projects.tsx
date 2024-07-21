@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="col-span-2 row-span-6 col-start-5 bg-spotify-blackrounded-xl">
-      <div className="flex pl-6 pt-4 mb-3 rounded-lg gap-5">
+    <div className="col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-lg">
+      <div className="flex pl-6 pt-4 mb-3 rounded-xl gap-5">
         <button className="text-md text-spotify-black bg-spotify-green inline-block px-4 py-2 rounded-full text-spotify-light-dark">
           Recent Projects
         </button>
