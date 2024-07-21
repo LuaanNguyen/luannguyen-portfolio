@@ -3,9 +3,9 @@ import { ReactNode } from "react";
 
 export default function Skills() {
   return (
-    <div className="col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl h-fit">
+    <div className="max-lg:col-span-1  max-lg:row-span-1 col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl h-fit">
       <h1 className="text-2xl font-semibold pl-6 pt-4">My Skills</h1>
-      <InfiniteMovingCards items={skillItems} speed="slow" />
+      <InfiniteMovingCards items={skillItems} speed="slow" className="" />
     </div>
   );
 }

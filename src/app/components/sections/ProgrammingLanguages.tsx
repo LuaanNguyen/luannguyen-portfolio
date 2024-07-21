@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 
 export default function ProgrammingLanguages() {
   return (
-    <div className="col-span-2 row-span-2 col-start-3 row-start-5 rounded-xl  bg-spotify-light-dark ">
+    <div className=" max-lg:col-span-1  max-lg:row-span-1  col-span-2 row-span-2 col-start-3 row-start-5 rounded-xl  bg-spotify-light-dark ">
       <h1 className="text-xl font-semibold pl-6 pt-4">Programming Languages</h1>
-      <div className="grid grid-cols-5 gap-2 p-5">
+      <div className="grid grid-cols-5 gap-1 p-6">
         {languageItems.map((item) => (
           <div className="w-[60px] p-3 rounded-lg shadow-md" key={item.name}>
             {item.component}

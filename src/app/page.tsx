@@ -19,7 +19,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 export default function Home() {
   return (
     <>
-      <main className="min-h-[80px] w-screen max-w-[1800px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:grid-cols-2 mb-40 ">
+      <main className=" w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-40 max-md:mb-6">
         <ProfileCard />
         <ExperienceItem />
         <Projects />
@@ -34,7 +34,7 @@ export default function Home() {
 
 function ExperienceItem() {
   return (
-    <section className="relative col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden ">
+    <section className="relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden ">
       <div className="bg-spotify-gray p-6 rounded-t-lg">
         <h2 className="text-2xl font-bold">Professional Experience</h2>
         <p className="flex items-center text-spotify-grey">
