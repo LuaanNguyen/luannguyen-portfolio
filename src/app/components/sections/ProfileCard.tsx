@@ -9,7 +9,7 @@ import { BackgroundGradient } from "../ui/background-gradient";
 
 export default function ProfileCard() {
   return (
-    <div className="relative col-span-2 row-span-6 bg-spotify-black rounded-xl py-10">
+    <div className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10">
       <div className="flex flex-col gap-5">
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
@@ -18,7 +18,7 @@ export default function ProfileCard() {
             width={300}
             height={300}
             objectFit="none" // change to suit your needs
-            className=" rounded-[25px] "
+            className="rounded-[25px] "
           ></Image>
         </BackgroundGradient>
 
