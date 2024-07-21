@@ -43,6 +43,7 @@ function Location() {
 
 function Booking() {
   const email = "luanthiennguyen2003@gmail.com"; // Replace with the email you want to copy
+  const phoneNum = "9176574242";
 
   const handleCopyEmail = () => {
     navigator.clipboard
@@ -54,13 +55,26 @@ function Booking() {
         console.error("Failed to copy: ", err);
       });
   };
+
+  const handleCopyNumber = () => {
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("Phone bumber copied to clipboard!");
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  };
+
   return (
     <div className="flex px-6 mt-4 gap-4">
       <button
         type="button"
-        className="flex min-w-12 items-center text-md gap-1 px-5 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
+        className="flex min-w-12 items-center text-md gap-1 px-3 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
+        onClick={handleCopyNumber}
       >
-        Book a Call
+        <FaRegCopy /> Copy Number
       </button>
       <button
         type="button"
