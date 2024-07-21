@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.svg" sizes="any" />
+        <link rel="icon" href="/luan.jpg" sizes="any" />
         <link
           rel="icon"
           href="/icon?<generated>"
