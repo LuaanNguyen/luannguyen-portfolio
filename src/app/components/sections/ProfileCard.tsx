@@ -9,7 +9,10 @@ import { BackgroundGradient } from "../ui/background-gradient";
 
 export default function ProfileCard() {
   return (
-    <div className="relative max-md:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10">
+    <div
+      className="relative max-md:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10"
+      id="#profile"
+    >
       <div className="flex flex-col gap-5">
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image

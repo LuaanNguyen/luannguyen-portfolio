@@ -9,7 +9,10 @@ import Image from "next/image";
 
 export default function ExperienceItem() {
   return (
-    <section className="relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden ">
+    <section
+      className="relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden"
+      id="#experience"
+    >
       <div className="bg-spotify-gray p-6 rounded-t-lg">
         <h2 className="text-2xl font-bold">Professional Experience</h2>
         <p className="flex items-center text-spotify-grey">

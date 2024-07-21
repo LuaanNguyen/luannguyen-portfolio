@@ -16,7 +16,6 @@ export default function Home() {
         <ProgrammingLanguages />
         <Skills />
         <SpotifyAlbum />
-        <Footer />
       </main>
     </>
   );

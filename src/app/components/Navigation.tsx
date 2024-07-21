@@ -15,15 +15,15 @@ import { TypewriterEffect } from "./ui/type-writer-effect";
 export default function Navigation(): ReactNode {
   const [mobile, setMobile] = useState<boolean>(false);
 
-  function handleMobile() {
+  function handleMobile(): void {
     setMobile((prev) => !prev);
   }
 
   return (
     <nav className="w-screen">
       <div
-        className={`flex flex-col bg-spotify-light-dark max-md:mx-4 max-md:mt-4 mx-32 mt-4 p-2 rounded-full
-         items-center`}
+        className={`flex flex-col bg-spotify-light-dark max-md:mx-4 max-md:mt-4 mx-32 mt-4 p-2 rounded-full max-md:rounded-xl
+         `}
       >
         <section className="flex flex-row w-full justify-between items-center max-md:px-4 max-md:py-1">
           {/*Mobile Mode*/}
@@ -55,7 +55,7 @@ export default function Navigation(): ReactNode {
             <NavButton name="Let's Talk" />
           </section>
         </section>
-        {mobile && <MobileNav />}
+        {mobile && <MobileNav handleMobile={handleMobile} />}
       </div>
     </nav>
   );
