@@ -9,7 +9,7 @@ import ExperienceItem from "./components/sections/ExperienceItems";
 export default function Home() {
   return (
     <>
-      <main className=" w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-40 max-md:mb-6">
+      <main className=" w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-40">
         <ProfileCard />
         <ExperienceItem />
         <Projects />
