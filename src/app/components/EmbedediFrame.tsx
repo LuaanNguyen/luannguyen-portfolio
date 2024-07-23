@@ -23,7 +23,7 @@ export default function EmbedediFrame() {
         window.onSpotifyIframeApiReady = (IFrameAPI: any) => {
           const element = playerRef.current;
           const options = {
-            uri: "spotify:track:2p8IUWQDrpjuFltbdgLOag",
+            uri: "spotify:track:4ZHGRFGwjnEIXHG2FhcDPv",
             width: "90%",
             height: "90",
             theme: "black",
