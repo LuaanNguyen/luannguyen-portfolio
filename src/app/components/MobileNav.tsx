@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SocialLinks from "./SocialLinks";
 
 interface MobileNavProps {
   handleMobile: () => void;
@@ -8,10 +8,9 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
   const links = [
     { section: "Profile", href: "#profile" },
     { section: "Experience", href: "#experience" },
-    { section: "Projects", href: "#projects" },
+    //{ section: "Projects", href: "#projects" },
     { section: "Programming Languages", href: "#programming-languages" },
     { section: "Skills", href: "#skills" },
-    { section: "Spotify Album", href: "#spotify-album" },
   ];
 
   return (
@@ -30,6 +29,9 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
           </a>
         </div>
       ))}
+      <div className="flex flex-row gap-5 p-3 items-center justify-center">
+        <SocialLinks />
+      </div>
     </nav>
   );
 }
