@@ -1,19 +1,24 @@
 "use client";
-import { createContext, ReactNode, useContext } from "react";
-import { useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
-type initialContextValue = {
+// Define the context value type
+export type InitialContextValue = {
   experienceSection: boolean;
   setExperienceSection: (value: boolean) => void;
 };
 
-type generalContextProps = {
+// Create the context with an undefined default value
+export const GeneralContext = createContext<InitialContextValue | undefined>(
+  undefined
+);
+
+// Define the props type for the provider
+type GeneralProviderProps = {
   children: ReactNode;
 };
 
-const GeneralContext = createContext<initialContextValue | null>(null);
-
-function GeneralProvider({ children }: generalContextProps) {
+// Provider component to wrap around parts of the app
+export function GeneralProvider({ children }: GeneralProviderProps) {
   const [experienceSection, setExperienceSection] = useState<boolean>(false);
 
   return (
@@ -25,12 +30,11 @@ function GeneralProvider({ children }: generalContextProps) {
   );
 }
 
-function useGeneralContext() {
-  const context = useContext(GeneralContext)!;
+// Custom hook to use the context
+export function useGeneralContext() {
+  const context = useContext(GeneralContext);
   if (context === undefined) {
-    throw new Error("Timer Context was used outside of TimerProvider");
+    throw new Error("useGeneralContext must be used within a GeneralProvider");
   }
   return context;
 }
-
-export { GeneralProvider, useGeneralContext };
