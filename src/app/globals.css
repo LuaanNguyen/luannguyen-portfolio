@@ -28,6 +28,10 @@ html {
     @apply bg-[#535353];
   }
 
+  .bg-spotify-gray-hover {
+    @apply bg-[#323131];
+  }
+
   .bg-spotify-light-gray {
     @apply bg-[#B3B3B3];
   }

@@ -1,21 +1,23 @@
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
 import Link from "next/link";
+import { ProjectsProps } from "../../page";
 
-export default function Projects() {
+export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
     <div
       className="max-md:hidden max-lg:col-span-1  max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-xl"
       id="projects"
     >
       <div className="flex pl-6 pt-4 mb-3 rounded-xl gap-5">
-        <button className="text-md text-spotify-black font-semibold bg-spotify-green inline-block px-4 py-2 rounded-full text-spotify-light-dark">
+        <button className="text-md text-spotify-black font-semibold bg-spotify-white inline-block px-4 py-2 rounded-full text-spotify-light-dark">
           Recent Projects
         </button>
-        <button className="text-md text-spotify-white inline-block px-4 py-2 rounded-full bg-spotify-black border border-spotify-gray text-spotify-light-gray hover:bg-spotify-gray text-spotify-light-dark">
-          <a href="https://github.com/LuaanNguyen" target="_blank">
-            Explore All Projects
-          </a>
+        <button
+          className="text-md text-spotify-white inline-block px-4 py-2 font-semibold rounded-full bg-spotify-black border border-spotify-gray text-spotify-light-gray hover:bg-spotify-gray text-spotify-light-dark"
+          onClick={onSetExperienceSection}
+        >
+          Explore All Projects
         </button>
       </div>
       <StickyScroll content={projectLists} />
