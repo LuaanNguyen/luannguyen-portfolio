@@ -1,5 +1,6 @@
-"use clients";
-import { useContext, useState } from "react";
+"use client";
+
+import { useState } from "react";
 import ProfileCard from "./components/sections/ProfileCard";
 import Footer from "./components/Footer";
 import Skills from "./components/sections/Skills";
@@ -10,11 +11,10 @@ import ExperienceItem from "./components/sections/ExperienceItems";
 import OpenedExperienceItem from "./components/sections/OpenedExperienceItem";
 
 export default function Home() {
-  //const { experienceSection, setExperienceSection } = useGeneralContext();
+  const { experienceSection, setExperienceSection } = useState(false);
 
   return (
     <>
-      {" "}
       <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-40">
         <ProfileCard />
         {/* <ExperienceItem />
