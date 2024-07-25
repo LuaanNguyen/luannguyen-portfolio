@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div
-      className="max-md:hidden max-lg:col-span-1  max-lg:row-span-1  col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-xl"
+      className="max-md:hidden max-lg:col-span-1  max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-xl"
       id="projects"
     >
       <div className="flex pl-6 pt-4 mb-3 rounded-xl gap-5">
         <button className="text-md text-spotify-black font-semibold bg-spotify-green inline-block px-4 py-2 rounded-full text-spotify-light-dark">
           Recent Projects
         </button>
-        <button className="text-md text-spotify-white inline-block px-4 py-2 rounded-full bg-spotify-black border border-gray-700 text-spotify-light-gray hover:bg-spotify-gray text-spotify-light-dark">
+        <button className="text-md text-spotify-white inline-block px-4 py-2 rounded-full bg-spotify-black border border-spotify-gray text-spotify-light-gray hover:bg-spotify-gray text-spotify-light-dark">
           <a href="https://github.com/LuaanNguyen" target="_blank">
             Explore All Projects
           </a>
