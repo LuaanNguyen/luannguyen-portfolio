@@ -6,9 +6,9 @@ interface MobileNavProps {
 
 export default function MobileNav({ handleMobile }: MobileNavProps) {
   const links = [
-    { section: "Profile", href: "#profile" },
+    // { section: "Profile", href: "#profile" },
     { section: "Experience", href: "#experience" },
-    //{ section: "Projects", href: "#projects" },
+    { section: "Projects", href: "#project" },
     { section: "Programming Languages", href: "#programming-languages" },
     { section: "Skills", href: "#skills" },
   ];

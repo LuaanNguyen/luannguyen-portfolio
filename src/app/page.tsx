@@ -11,7 +11,7 @@ import ExperienceItem from "./components/sections/ExperienceItems";
 import OpenedExperienceItem from "./components/sections/OpenedExperienceItem";
 
 export interface ProjectsProps {
-  onSetExperienceSection: () => void;
+  onSetExperienceSection?: () => void;
 }
 
 export default function Home() {
@@ -25,9 +25,11 @@ export default function Home() {
     <>
       <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-40">
         <ProfileCard />
+
         {experienceSection ? (
           <OpenedExperienceItem
             onSetExperienceSection={handleSetExperienceSection}
+            className="max-md:hidden"
           />
         ) : (
           <>
@@ -36,6 +38,8 @@ export default function Home() {
             <ProgrammingLanguages />
           </>
         )}
+        <OpenedExperienceItem className="block lg:hidden" />
+
         <Skills />
         <SpotifyAlbum />
         <Footer />
