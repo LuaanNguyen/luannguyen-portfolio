@@ -6,18 +6,19 @@ import {
   personalProjects,
   type personalProjectType,
 } from "../../../../data/projects";
+import Link from "next/link";
 
 export default function OpenedExperienceItem({
   onSetExperienceSection,
 }: ProjectsProps) {
   return (
-    <div className="col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-y-scroll max-h-[80vh]">
+    <div className="col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-y-scroll max-h-[80vh] pb-5">
       <div className="flex justify-between rounded-t-xl">
         <div className="pt-6 pl-6">
           <h2 className="text-2xl max-md:text-xl font-bold ">Projects</h2>
           <p className="flex items-center text-spotify-grey max-md:text-sm gap-1">
-            <CiGlobe /> {personalProjects.length} total projects • Updated July
-            25, 2024
+            <CiGlobe /> {personalProjects.length} completed projects • Updated
+            July 25, 2024
           </p>
         </div>
 
@@ -31,31 +32,30 @@ export default function OpenedExperienceItem({
       </div>
       <section className="flex flex-row flex-wrap gap-5 p-2">
         {personalProjects.map((project) => (
-          <div
-            key={project.title}
-            className="w-[250px] max-h-[500px] hover:bg-spotify-gray-hover rounded-xl flex flex-col p-4 gap-2"
-          >
-            <Image
-              src={project.imageSrc}
-              alt={project.imageAlt}
-              width={400}
-              height={400}
-              objectFit="cover" // Adjust based on your needs
-              className="rounded-lg"
-            />
-            <h4 className="text-md">{project.title}</h4>
-            <p className="text-sm text-spotify-grey">{project.description}</p>
-            <div className="flex gap-1 flex-wrap">
-              {project.tech.map((el) => (
-                <div
-                  className="text-[10px] bg-spotify-green rounded-xl items-center p-2"
-                  key={el}
-                >
-                  <p className="text-center">{el}</p>
-                </div>
-              ))}
+          <Link target="_blank" key={project.title} href={project.href}>
+            <div className="w-[250px] max-h-[500px] hover:bg-spotify-gray-hover rounded-xl flex flex-col p-4 gap-2">
+              <Image
+                src={project.imageSrc}
+                alt={project.imageAlt}
+                width={400}
+                height={400}
+                objectFit="cover" // Adjust based on your needs
+                className="rounded-lg"
+              />
+              <h4 className="text-md">{project.title}</h4>
+              <p className="text-sm text-spotify-grey">{project.description}</p>
+              <div className="flex gap-1 flex-wrap">
+                {project.tech.map((el) => (
+                  <div
+                    className="text-[10px] bg-spotify-green rounded-md items-center p-1"
+                    key={el}
+                  >
+                    <p className="text-center">{el}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </section>
     </div>
