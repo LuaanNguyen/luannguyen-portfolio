@@ -40,7 +40,7 @@ export default function RootLayout({
           {" "}
           <Navigation />
           {children}
-          <EmbedediFrame />
+          {/* <EmbedediFrame /> */}
         </GeneralProvider>
       </body>
     </html>

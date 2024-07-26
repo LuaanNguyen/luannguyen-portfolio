@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function ExperienceItem() {
   return (
     <section
-      className={`relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden`}
+      className={`relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden max-md:min-h-[600px]`}
       id="#experience"
     >
       <div className="bg-spotify-gray p-6 rounded-t-lg">
@@ -45,10 +45,10 @@ export default function ExperienceItem() {
 
 function Positions() {
   return (
-    <div className="p-4 overflow-y-auto h-[300px] pb-20 ">
+    <div className="p-4 md:overflow-y-auto h-[300px] pb-20">
       {experienceLists.map((position: experienceListsProps, index) => (
         <div
-          className="flex gap-4 pb-2 p-2 items-center hover:bg-spotify-black rounded-lg"
+          className="flex gap-4 pb-2 p-2 items-center sm:hover:bg-spotify-black rounded-lg"
           key={position.companyName}
         >
           {/* {" "}
