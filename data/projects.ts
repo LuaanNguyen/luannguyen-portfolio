@@ -117,7 +117,7 @@ export const personalProjects: personalProjectType = [
     tech: ["HTML/CSS", "JavaScript", "Bootstrap", "MapBox API"],
   },
   {
-    href: "https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#",
+    href: "https://b7c0c00a-ee15-4855-91dc-f508d9c2049b-00-1pkpcsn82sekg.spock.replit.dev/",
     imageSrc: "/hiking-matching-game.png",
     imageAlt: "Hiking Game",
     title: "Hiking Matching Game 🥾",
@@ -126,12 +126,12 @@ export const personalProjects: personalProjectType = [
     tech: ["HTML/CSS", "JavaScript", "Bootstrap"],
   },
   {
-    href: "https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#",
+    href: "https://luaannguyen.github.io/FSE100-final-project/",
     imageSrc: "/fine-motor-skills.png",
     imageAlt: "Space Games",
     title: "Space Games 👾",
     description:
-      "Designed and developed key functionalities, game algorithms, and interface for three online games in p5.js using with a team of four engineers and presented the finished products to over 20 stakeholders.",
+      "Designed and developed key functionalities, game algorithms, and interface for three online games in p5.js with a team of four engineers and presented the finished products to over 20 stakeholders.",
     tech: ["HTML/CSS", "JavaScript", "p5.js"],
   },
 
