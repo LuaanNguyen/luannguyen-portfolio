@@ -24,12 +24,12 @@ export default function OpenedExperienceItem({
       id="project"
       className={`${className} col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-y-scroll md:max-h-[80vh] pb-5 max-md:px-4`}
     >
-      <div className="flex justify-between rounded-t-xl pb-3">
-        <div className="flex flex-col pt-6 pl-6 gap-1">
+      <div className="flex justify-between rounded-t-xl pb-3 items-center">
+        <div className="flex flex-col pt-6 pl-6 max-md:pl-1 gap-1">
           <h2 className="text-2xl max-md:text-2xl font-bold">Projects</h2>
           <p className="flex items-center text-spotify-grey max-md:text-sm gap-1">
-            <CiGlobe /> {personalProjects.length} completed projects • Updated
-            July 25, 2024
+            <CiGlobe className="text-xl text-spotify-white" />{" "}
+            {personalProjects.length} completed projects • Updated July 25, 2024
           </p>
         </div>
 
