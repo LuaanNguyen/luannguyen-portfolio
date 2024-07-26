@@ -1,9 +1,10 @@
+// layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import EmbedediFrame from "./components/EmbedediFrame";
-import Footer from "./components/Footer";
+import { GeneralProvider } from "./contexts/generalContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,9 +36,12 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Navigation />
-        {children}
-        <EmbedediFrame />
+        <GeneralProvider>
+          {" "}
+          <Navigation />
+          {children}
+          <EmbedediFrame />
+        </GeneralProvider>
       </body>
     </html>
   );

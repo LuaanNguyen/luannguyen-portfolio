@@ -14,8 +14,10 @@ export default function ExperienceItem() {
       id="#experience"
     >
       <div className="bg-spotify-gray p-6 rounded-t-lg">
-        <h2 className="text-2xl font-bold">Professional Experience</h2>
-        <p className="flex items-center text-spotify-grey">
+        <h2 className="text-2xl max-md:text-xl font-bold">
+          Professional Experience
+        </h2>
+        <p className="flex items-center text-spotify-grey max-md:text-sm">
           <CiGlobe />
           1208 saves • 184086h 38m
         </p>

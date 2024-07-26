@@ -10,11 +10,11 @@ import { BackgroundGradient } from "../ui/background-gradient";
 export default function ProfileCard() {
   return (
     <div
-      className="relative max-md:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10"
+      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10 max-md:py-4"
       id="#profile"
     >
       <div className="flex flex-col gap-5">
-        <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
+        <BackgroundGradient containerClassName="rounded-[40px] place-self-center mx-4">
           <Image
             src="/Luan.jpg"
             alt="Picture of the author"
@@ -93,10 +93,10 @@ function Booking() {
 
 function PersonalStatement() {
   return (
-    <div className="flex flex-col gap-3 px-6">
-      <h1 className="text-2xl font-semibold">Luan Thien Nguyen 🍀</h1>
+    <div className="flex flex-col gap-3 max-md:gap-2 px-6">
+      <h1 className="text-2xl font-semibold">Luan Thien Nguyen</h1>
       <p className="text-spotify-gray text-sm">Developer • Designer • Artist</p>
-      <h4 className="text-md text-spotify-light-gray font-semibold">
+      <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
         I am a rising <span className="text-spotify-white"> Junior </span>
         studying{" "}
         <span className="text-spotify-white"> Computer Science 💻</span> at
