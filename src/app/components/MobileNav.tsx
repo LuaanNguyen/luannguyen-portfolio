@@ -1,4 +1,5 @@
 import SocialLinks from "./SocialLinks";
+import NavButton from "./NavButton";
 
 interface MobileNavProps {
   handleMobile: () => void;
@@ -14,7 +15,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
   ];
 
   return (
-    <nav className="bg-spotify-light-dark flex flex-col text-left">
+    <nav className="bg-spotify-light-dark flex flex-col text-left sm:hidden">
       {links.map((link, index) => (
         <div
           key={index}
@@ -31,6 +32,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
       ))}
       <div className="flex flex-row gap-5 p-3 items-center justify-center">
         <SocialLinks />
+        <NavButton name="Resume"></NavButton>
       </div>
     </nav>
   );

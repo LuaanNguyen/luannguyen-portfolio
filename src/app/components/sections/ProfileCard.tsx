@@ -74,14 +74,14 @@ function Booking() {
     <div className="flex px-6 mt-4 gap-4">
       <button
         type="button"
-        className="flex min-w-12 items-center text-md gap-1 px-3 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
+        className="flex min-w-12 items-center text-sm gap-1 px-3 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-light-dark "
         onClick={handleCopyNumber}
       >
         <FaRegCopy /> Copy Number
       </button>
       <button
         type="button"
-        className="flex min-w-12 items-center text-md gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-gray-700 text-spotify-light-gray font-bold hover:bg-spotify-gray text-spotify-light-dark"
+        className="flex min-w-12 items-center text-sm gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-spotify-gray text-spotify-white font-bold hover:bg-spotify-gray text-spotify-light-dark"
         onClick={handleCopyEmail}
       >
         <FaRegCopy />

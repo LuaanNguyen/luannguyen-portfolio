@@ -23,9 +23,9 @@ export default function OpenedExperienceItem({
       id="project"
       className={`${className} col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-y-scroll max-h-[80vh] pb-5`}
     >
-      <div className="flex justify-between rounded-t-xl pb-6">
-        <div className="pt-6 pl-6">
-          <h2 className="text-2xl max-md:text-2xl font-bold ">Projects</h2>
+      <div className="flex justify-between rounded-t-xl pb-3">
+        <div className="flex flex-col pt-6 pl-6 gap-1">
+          <h2 className="text-2xl max-md:text-2xl font-bold">Projects</h2>
           <p className="flex items-center text-spotify-grey max-md:text-sm gap-1">
             <CiGlobe /> {personalProjects.length} completed projects • Updated
             July 25, 2024
@@ -52,7 +52,7 @@ export default function OpenedExperienceItem({
                 objectFit="cover" // Adjust based on your needs
                 className="rounded-lg"
               />
-              <h4 className="text-md">{project.title}</h4>
+              <h4 className="text-lg">{project.title}</h4>
               <p className="text-sm text-spotify-grey">{project.description}</p>
               <div className="flex gap-1 flex-wrap">
                 {project.tech.map((el) => (

@@ -14,7 +14,7 @@ export default function ExperienceItem() {
       id="#experience"
     >
       <div className="bg-spotify-gray p-6 rounded-t-lg">
-        <h2 className="text-2xl max-md:text-xl font-bold">
+        <h2 className="text-xl max-md:text-xl font-bold">
           Professional Experience
         </h2>
         <p className="flex items-center text-spotify-grey max-md:text-sm">
@@ -63,13 +63,13 @@ function Positions() {
           <h4>{index + 1}</h4>
           <div>
             {" "}
-            <p className="text-spotify-green font-semibold">
+            <p className="text-spotify-green font-semibold text-sm">
               {position.companyName}
             </p>
             <p className="font-bold text-spotify-white">
               {position.positionTitle}
             </p>
-            <p className="text-spotify-gray">{position.date}</p>
+            <p className="text-spotify-gray text-sm">{position.date}</p>
           </div>
         </div>
       ))}
