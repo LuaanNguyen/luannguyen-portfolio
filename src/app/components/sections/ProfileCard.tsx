@@ -61,7 +61,7 @@ function Booking() {
 
   const handleCopyNumber = () => {
     navigator.clipboard
-      .writeText(email)
+      .writeText(phoneNum)
       .then(() => {
         alert("Phone bumber copied to clipboard!");
       })
