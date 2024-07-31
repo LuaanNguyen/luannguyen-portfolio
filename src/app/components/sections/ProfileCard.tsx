@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaRegCopy } from "react-icons/fa6";
-import SocialLinks from "../SocialLinks";
 import { IoLocationOutline } from "react-icons/io5";
 import { BackgroundGradient } from "../ui/background-gradient";
 
@@ -24,10 +24,8 @@ export default function ProfileCard() {
             className="rounded-[25px] "
           ></Image>
         </BackgroundGradient>
-
         <PersonalStatement />
         <Booking />
-        {/* <Location /> */}
       </div>
     </div>
   );
