@@ -7,7 +7,7 @@ interface ButtonProps {
 export default function NavButton({ name }: ButtonProps) {
   return (
     <a
-      href="https://drive.google.com/file/d/1-sYA1UNLepdgEd145ytWHb4aEAm2e_Bb/view?usp=sharing"
+      href="https://drive.google.com/file/d/1s1neHJHyNp7HS9GUeh28QABNzOmkzPJh/view?usp=sharing"
       target="_blank"
     >
       {" "}

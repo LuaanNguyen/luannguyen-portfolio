@@ -89,13 +89,13 @@ const experienceLists: experienceListsProps[] = [
     imageSrc: "/ESR.svg",
     companyName: "Ethical Spectacle Research",
     positionTitle: "Software Engineer Intern",
-    date: "August 2024 - Decemter 2024",
+    date: "August 2024 - Present",
   },
   {
     imageSrc: "/asu.svg",
     companyName: "ASU Enterprise Technology",
     positionTitle: "IT Consultant",
-    date: "May 2024 – Present",
+    date: "May 2024 – August 2024",
   },
   {
     imageSrc: "/pinear-logo.svg",
@@ -106,7 +106,7 @@ const experienceLists: experienceListsProps[] = [
   {
     imageSrc: "/asu.svg",
     companyName: "EPICS at ASU",
-    positionTitle: "Software Engineer Lead",
+    positionTitle: "Lead Software Engineer",
     date: "January 2024 – April 2024",
   },
   {
