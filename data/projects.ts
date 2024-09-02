@@ -10,6 +10,44 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "",
+    imageSrc: "/thesodaio.png",
+    imageAlt: "Thesoda.io",
+    title: "SoDA Website 🪪",
+    description:
+      "Directed a website revamp for the Software Developer Association, one of the largest Arizona State University's student organizations, with 8 other technical officers. Assisted with the creation of a Flask back-end for the points system, Discord bots, as well as SEO optimization.",
+    tech: [
+      "ReactJS",
+      "Flask",
+      "Digital Ocean",
+      "Netlify",
+      "AceternityUI",
+      "TailwindCSS",
+      "TypeScript",
+      "Python",
+      "SEO",
+    ],
+  },
+  {
+    href: "https://thesoda.io/",
+    imageSrc: "/thesodaio.png",
+    imageAlt: "Thesoda.io",
+    title: "SoDA Website 🪪",
+    description:
+      "Directed a website revamp for the Software Developer Association, one of the largest Arizona State University's student organizations, with 8 other technical officers. Assisted with the creation of a Flask back-end for the points system, Discord bots, as well as SEO optimization.",
+    tech: [
+      "ReactJS",
+      "Flask",
+      "Digital Ocean",
+      "Netlify",
+      "AceternityUI",
+      "TailwindCSS",
+      "TypeScript",
+      "Python",
+      "SEO",
+    ],
+  },
+  {
     href: "https://www.luannguyen.net/",
     imageSrc: "/luan-portfolio.jpeg",
     imageAlt: "My Portfolio",
