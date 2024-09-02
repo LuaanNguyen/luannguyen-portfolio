@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectsProps } from "../../page";
 import { BackgroundGradient } from "../ui/background-gradient";
-import { FaArrowDown } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";
+import { FaArrowDown } from "react-icons/fa6";
 
 export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
@@ -12,9 +12,10 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
       className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-xl"
       id="projects"
     >
-      <div className="flex pl-6 pt-4 mb-3 rounded-xl gap-5">
-        <button className="text-md text-spotify-black font-semibold bg-spotify-white px-4 py-2 rounded-full text-spotify-light-dark">
-          <p className="flex flex-row ">Recent Projects</p>
+      <div className="flex mb-3 rounded-xl gap-5">
+        <button className="flex text-md text-spotify-black font-semibold bg-spotify-white px-3 gap-1 py-2 rounded-full text-spotify-light-dark items-center justify-center">
+          <p className="flex flex-row ">Featured Projects</p>
+          <FaArrowDown className="text-2xl" />
         </button>
 
         <BackgroundGradient>
