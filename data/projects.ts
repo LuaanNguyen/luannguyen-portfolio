@@ -10,13 +10,13 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
-    href: "https://github.com/LuaanNguyen/asteroids",
-    imageSrc: "/asteroids.png",
+    href: "https://github.com/LuaanNguyen/static-site-generator",
+    imageSrc: "/staticsitegenerator_infrastructure.png",
     imageAlt: "Static Site Generator",
-    title: "Static Site Generator",
+    title: "Static Site Generator ♺ (In progress)",
     description:
-      "Developed a simple version of the Asteroids Game (https://freeasteroids.org/). I learned how to use pygame for the first time. The game was meant to solidified my OOP concepts.",
-    tech: ["Pygame", "Python", "OOP"],
+      "This Python program takes raw content files (like Markdown and images) and turns them into a static website (a mix of HTML and CSS files).",
+    tech: ["Python"],
   },
   {
     href: "https://github.com/LuaanNguyen/asteroids",
