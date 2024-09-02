@@ -29,7 +29,8 @@ export default function OpenedExperienceItem({
           <h2 className="text-2xl max-md:text-2xl font-bold">Projects</h2>
           <p className="flex items-center text-spotify-grey max-md:text-sm gap-1">
             <CiGlobe className="text-xl text-spotify-white" />{" "}
-            {personalProjects.length} completed projects • Updated July 25, 2024
+            {personalProjects.length} completed projects • Updated September 2,
+            2024
           </p>
         </div>
 

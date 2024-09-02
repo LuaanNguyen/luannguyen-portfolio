@@ -24,7 +24,9 @@ export default function ProfileCard() {
             className="rounded-[25px] "
           ></Image>
         </BackgroundGradient>
+
         <PersonalStatement />
+        <Location />
         <Booking />
       </div>
     </div>
@@ -33,7 +35,7 @@ export default function ProfileCard() {
 
 function Location() {
   return (
-    <div className="absolute bottom-0 right-0 text-lg px-4 py-2 opacity-50">
+    <div className="text-lg px-5">
       <div className="flex items-center gap-1 font-semibold">
         <IoLocationOutline className="text-spotify-green text-2xl" />
         Tempe, AZ
@@ -72,14 +74,14 @@ function Booking() {
     <div className="flex px-6 mt-4 gap-4">
       <button
         type="button"
-        className="flex min-w-12 items-center text-sm gap-1 px-3 py-3 rounded-full bg-spotify-green font-bold hover:bg-spotify-dark-green text-spotify-black "
+        className="flex min-w-12 items-center text-sm gap-1 px-3 py-3 rounded-full bg-spotify-green font-semibold hover:bg-spotify-dark-green text-white "
         onClick={handleCopyNumber}
       >
         <FaRegCopy /> Copy Number
       </button>
       <button
         type="button"
-        className="flex min-w-12 items-center text-sm gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-spotify-gray text-spotify-white font-bold hover:bg-spotify-gray text-spotify-light-dark"
+        className="flex min-w-12 items-center text-sm gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-spotify-gray text-spotify-white font-semibold hover:bg-spotify-gray text-spotify-light-dark"
         onClick={handleCopyEmail}
       >
         <FaRegCopy />
@@ -92,7 +94,7 @@ function Booking() {
 function PersonalStatement() {
   return (
     <div className="flex flex-col gap-3 max-md:gap-2 px-6">
-      <h1 className="text-2xl font-semibold">Luan Thien Nguyen</h1>
+      <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
       <p className="text-spotify-gray text-sm">Developer • Designer • Artist</p>
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
         I am a rising <span className="text-spotify-white"> Junior </span>

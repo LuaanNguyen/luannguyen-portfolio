@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-6 max-lg:flex max-lg:flex-col max-md:px-6 mb-10">
+      <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-6 mb-10">
         <ProfileCard />
         {experienceSection ? (
           <OpenedExperienceItem

@@ -10,6 +10,43 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/static-site-generator",
+    imageSrc: "/staticsitegenerator_infrastructure.png",
+    imageAlt: "Static Site Generator",
+    title: "Static Site Generator ♺ (In progress)",
+    description:
+      "This Python program takes raw content files (like Markdown and images) and turns them into a static website (a mix of HTML and CSS files).",
+    tech: ["Python"],
+  },
+  {
+    href: "https://github.com/LuaanNguyen/asteroids",
+    imageSrc: "/asteroids.png",
+    imageAlt: "Asteroids Game",
+    title: "Asteroids Game ☄️",
+    description:
+      "Developed a simple version of the Asteroids Game (https://freeasteroids.org/). I learned how to use pygame for the first time. The game was meant to solidified my OOP concepts.",
+    tech: ["Pygame", "Python", "OOP"],
+  },
+  {
+    href: "https://thesoda.io/",
+    imageSrc: "/thesodaio.png",
+    imageAlt: "Thesoda.io",
+    title: "The Software Developers Association (SoDA) Website 🥤",
+    description:
+      "Directed a website revamp for the Software Developer Association, one of the largest Arizona State University's student organizations, with 8 other technical officers. Assisted with the creation of a Flask back-end for the points system, Discord bots, as well as SEO optimization.",
+    tech: [
+      "ReactJS",
+      "Flask",
+      "Digital Ocean",
+      "Netlify",
+      "AceternityUI",
+      "TailwindCSS",
+      "TypeScript",
+      "Python",
+      "SEO",
+    ],
+  },
+  {
     href: "https://www.luannguyen.net/",
     imageSrc: "/luan-portfolio.jpeg",
     imageAlt: "My Portfolio",
