@@ -10,6 +10,24 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/Mine-Alliance",
+    imageSrc: "/Mine_Alliance.png",
+    imageAlt: "Mine Alliance ⛏️",
+    title: "Mine Alliance ⛏️",
+    description:
+      "An innovative, AI-driven application designed to unite stakeholders across Arizona's mining industry, promoting responsible and sustainable practices.",
+    tech: [
+      "AWS EC2",
+      "AWS SageMaker Studio",
+      "NextJS",
+      "TypeScript",
+      "Flask",
+      "Python",
+      "SQLAlchemy",
+      "OpenAI",
+    ],
+  },
+  {
     href: "https://github.com/LuaanNguyen/static-site-generator",
     imageSrc: "/staticsitegenerator_infrastructure.png",
     imageAlt: "Static Site Generator",
