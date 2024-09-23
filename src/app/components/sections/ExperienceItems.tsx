@@ -101,7 +101,7 @@ const experienceLists: experienceListsProps[] = [
   {
     imageSrc: "/asu.svg",
     companyName: "ASU Enterprise Technology",
-    positionTitle: "IT Consultant",
+    positionTitle: "Technology Consultant",
     date: "May 2024 – August 2024",
   },
   {
@@ -119,7 +119,7 @@ const experienceLists: experienceListsProps[] = [
   {
     imageSrc: "/gtx.jpeg",
     companyName: "The Global Tech Experience",
-    positionTitle: "Web Developer / UX/UI Designer",
+    positionTitle: "Web Developer",
     date: "August 2023 – December 2024",
   },
 ];

@@ -54,14 +54,14 @@ const projectLists: {
     ),
   },
   {
-    title: "🥑 Fiber (Calhacks 2024)",
+    title: "Mine Alliance ⛏️",
     description:
-      "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
+      "Pioneered the development of an AI-driven platform uniting Arizona’s mining stakeholders, implementing AWS infrastructure for CI/CD pipelines and integrating ChatGPT-4’s API for advanced NLP. Engineered a robust full-stack solution using NextJS and Flask, incorporating geospatial visualizations and real-time environmental monitoring to promote sustainable mining practices.",
     content: (
-      <a target="_blank" href="https://github.com/Smit2553/Fiber">
+      <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
         <Image
-          src="/fiber.png"
-          alt="Fiber Project"
+          src="/Mine_Alliance.png"
+          alt="Mine Alliance"
           loading="lazy"
           width={500}
           height={300}
@@ -70,14 +70,14 @@ const projectLists: {
     ),
   },
   {
-    title: "Online Database for Study Abroad Program 📊",
+    title: "🥑 Fiber (Calhacks 2024)",
     description:
-      "The desired outcomes of this project entail the establishment of a functional, self-updating database to facilitate communication with shrimp farmers and ensure consistent data conversion and updating. The database must support the visualization of critical parameters such as water temperature, pH, oxygen concentration, and salinity over time.",
+      "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
     content: (
-      <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
+      <a target="_blank" href="https://github.com/Smit2553/Fiber">
         <Image
-          src="/shrimp-farming.png"
-          alt="EPICS Project"
+          src="/fiber.png"
+          alt="Fiber Project"
           loading="lazy"
           width={500}
           height={300}
