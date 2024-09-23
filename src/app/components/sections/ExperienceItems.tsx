@@ -87,6 +87,13 @@ type experienceListsProps = {
 const experienceLists: experienceListsProps[] = [
   {
     imageSrc: "/ESR.svg",
+    companyName:
+      "School of Electrical, Computer and Energy Engineering — ASU ECEE",
+    positionTitle: "Software Engineer",
+    date: "September 2024 - Present",
+  },
+  {
+    imageSrc: "/ESR.svg",
     companyName: "Ethical Spectacle Research",
     positionTitle: "Software Engineer Intern",
     date: "August 2024 - Present",
