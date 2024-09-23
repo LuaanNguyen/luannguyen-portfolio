@@ -42,7 +42,7 @@ export default function OpenedExperienceItem({
           <MdClose className="text-2xl" />
         </button>
       </div>
-      <section className="flex flex-row flex-wrap gap-5 p-2 max-md:items-center max-md:justify-center">
+      <section className="flex flex-row flex-wrap gap-5 p-2 max-md:items-center justify-around">
         {personalProjects.map((project) => (
           <Link target="_blank" key={project.title} href={project.href}>
             <div className="relative w-[250px] max-h-[500px] max-md:w-[350px] sm:hover:bg-spotify-gray-hover rounded-xl flex flex-col p-4 gap-2">

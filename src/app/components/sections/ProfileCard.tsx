@@ -105,11 +105,8 @@ function PersonalStatement() {
           Arizona State University 🔱{" "}
         </span>
         . Passionate about{" "}
-        <span className="text-spotify-white">
-          {" "}
-          Full-Stack Web-App Development{" "}
-        </span>
-        &<span className="text-spotify-white"> UI/UX Design</span>
+        <span className="text-spotify-white"> Full-Stack Development </span>&
+        <span className="text-spotify-white"> UI/UX Design</span>
       </h4>
     </div>
   );
