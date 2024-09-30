@@ -10,10 +10,27 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/neutral-lens",
+    imageSrc: "/Neutral_Lens.png",
+    imageAlt: "Neutral Lens 🎥",
+    title: "Neutral Lens 🎥 (Social Bias Hackathon Winner 🥇)",
+    description:
+      '"Neutral-lens" is a browser extension that aims to reduce political bias in Youtube videos. This tool analyzes news content, identifying biased language and categorize it into 3 different types: Generalization, Unfairness, and Stereotypes.',
+    tech: [
+      "GUS-Net Bias Detection LLM",
+      "Google's BERT",
+      "ReactJS",
+      "TypeScript",
+      "Flask",
+      "Python",
+      "Chrome Extension",
+    ],
+  },
+  {
     href: "https://github.com/LuaanNguyen/Mine-Alliance",
     imageSrc: "/Mine_Alliance.png",
     imageAlt: "Mine Alliance ⛏️",
-    title: "Mine Alliance ⛏️",
+    title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🥇)",
     description:
       "An innovative, AI-driven application designed to unite stakeholders across Arizona's mining industry, promoting responsible and sustainable practices.",
     tech: [
@@ -85,7 +102,7 @@ export const personalProjects: personalProjectType = [
     imageSrc: "/sipnplay.png",
     imageAlt: "Sip n Play Cafe Website",
     title:
-      "Sip n Play Boardgame Café Website ☕️ (Codédex Hackathon 2024 Winner)",
+      "Sip n Play Boardgame Café Website ☕️ (Codédex Hackathon 2024 Winner 🥇)",
     description:
       "This project was created as a website revamp for Sip & Play Boardgame Cafe, with a collection of over 500+ games! Sip & Play is Park Slope's very first board game cafe, offering a wide menu of apps, sandwiches and salads along with boba, beer, wine and coffee.",
     tech: ["React", "ThreeJS", "TailwindCSS", "JavaScript"],
