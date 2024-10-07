@@ -48,10 +48,10 @@ export const personalProjects: personalProjectType = [
     href: "https://github.com/LuaanNguyen/static-site-generator",
     imageSrc: "/staticsitegenerator_infrastructure.png",
     imageAlt: "Static Site Generator",
-    title: "Static Site Generator ♺ (In progress)",
+    title: "Static Site Generator ♺",
     description:
       "This Python program takes raw content files (like Markdown and images) and turns them into a static website (a mix of HTML and CSS files).",
-    tech: ["Python"],
+    tech: ["Python", "OOP", "HTML/CSS"],
   },
   {
     href: "https://github.com/LuaanNguyen/asteroids",
