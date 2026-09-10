@@ -19,8 +19,8 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
       href: isOnBlogPage ? "/#experience" : "#experience",
     },
     {
-      section: "Programming Languages",
-      href: isOnBlogPage ? "/#programming-languages" : "#programming-languages",
+      section: "Favorite Reads",
+      href: isOnBlogPage ? "/#favorite-reads" : "#favorite-reads",
     },
     { section: "Projects", href: isOnBlogPage ? "/#project" : "#project" },
     {
