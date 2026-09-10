@@ -15,10 +15,10 @@ export default function ProfileCard() {
           <Image
             src="/luan_real.jpg"
             alt="Luan Nguyen"
-            width={400}
-            height={400}
+            width={1600}
+            height={1200}
             sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 400px"
-            className="h-auto w-full rounded-[25px] object-cover"
+            className="aspect-[4/3] w-full rounded-[25px] object-cover"
             priority
           />
         </BackgroundGradient>
